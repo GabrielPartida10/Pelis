@@ -5,106 +5,161 @@
     box-sizing: border-box;
 }
 
-html,
 body {
-    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
 }
 
 .container {
+    width: 100%;
     display: grid;
     grid-gap: 3px;
+}
+
+/* Estilos del banner */
+.banner {
+    position: relative;
     height: 100vh;
-    /* Ocupa toda la altura del viewport */
-}
-
-header {
-    background-color: #6bffb8;
-    padding: 20px;
-    text-align: center;
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    text-align: center;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+
+/* Estilo del nav */
 nav {
-    background-color: #ff5858;
-    padding: 20px;
+    background-color: #333;
+    padding: 15px 0;
 }
 
-section {
-    background-color: #a47ac0;
-    padding: 20px;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
-main {
-    background-color: #7d8834;
-    padding: 20px;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Estilos personalizados para la sección */
+.featured-section {
+    background-color: #fff;
+    padding: 50px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section-content {
+    text-align: center;
+}
+
+.featured-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.featured-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.anime-img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.anime-img:hover {
+    transform: scale(1.05); /* Efecto hover */
 }
 
 footer {
-    background-color: #147b7e;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
 }
 
-/* Diseño para dispositivos móviles (por defecto) */
-.container {
-    grid-template-areas:
-        "header"
-        "nav"
-        "section1"
-        "main"
-        "section2"
-        "footer";
-    grid-template-rows: 20% 10% 15% auto 15%  5%;
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-section:nth-child(3) {
-    grid-area: section1;
-}
-
-section:nth-child(4) {
-    grid-area: section2;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
-/* Diseño para tabletas */
-@media (min-width: 768px) {
-    .container {
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "section1 main"
-            "section2 section2"
-            "footer footer";
-        grid-template-rows: 20% 10% auto 20% 5%;
-        grid-template-columns: 30% auto;
+/* Responsividad */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5rem;
     }
-}
 
-/* Diseño para escritorios */
-@media (min-width: 1024px) {
-    .container {
-        grid-template-areas:
-            "header header header"
-            "nav nav nav"
-            "section1 main section2"
-            "footer footer footer";
-        grid-template-rows: 20% 10% auto 10%;
-        grid-template-columns: 20% auto 20%;
+    .featured-section {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .featured-section h2 {
+        font-size: 2rem;
+    }
+
+    .anime-img {
+        max-width: 200px;
     }
 }
