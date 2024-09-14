@@ -197,3 +197,58 @@ footer {
         max-width: 200px;
     }
 }
+/* Estilos para la Sección 2 */
+.anime-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.anime-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.anime-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.anime-info {
+    padding: 15px;
+}
+
+.anime-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.anime-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Efecto hover para las tarjetas de anime */
+.anime-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
