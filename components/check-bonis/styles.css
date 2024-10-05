@@ -1,6 +1,7 @@
-body{
+body {
     background-color: #587070;
 }
+
 .toggle-menu {
     display: none;
 }
@@ -12,7 +13,7 @@ header {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding: 40px;
+    padding: 400px;
 }
 
 
@@ -24,7 +25,7 @@ header {
     background-color: rgb(44 165 217);
     cursor: pointer;
     z-index: 3;
-    /* overflow: hidden; */
+    overflow: hidden;
     color: #333;
     position: relative;
     box-shadow: 2px 1px 4px -1px #000000 inset, 0px 1px 2px -1px #fcfcfc;
@@ -41,7 +42,7 @@ header {
     height: 70px;
     width: 70px;
     position: absolute;
-    /* overflow: hidden; */
+    overflow: hidden;
     top: 5px;
     left: 5px;
     z-index: 21;
