@@ -17,7 +17,7 @@ header {
     height: 80px;
     width: 200px;
     border-radius: 60px;
-    background-color: rgb(0, 179, 255);
+    background-color: rgb(44 165 217);
     cursor: pointer;
     z-index: 3;
     overflow: hidden;
@@ -40,19 +40,15 @@ header {
     transition: left 0.5s ease;
 }
 
+/* Aros */
 .ruedita-sol {
     height: 70px;
     width: 70px;
     border-radius: 100%;
     background-color: rgb(255, 206, 12);
-    box-shadow:
-        1px 1px 1px rgba(0, 0, 0, 0.3),
-        /* Sombra genérica */
-        1px 1px 1px rgba(255, 255, 255, 0.7),
-        /* Luz desde arriba a la izquierda */
-        1px 1px 1px rgba(7, 7, 7, 0.5),
-        /* Luz amarilla arriba derecha */
-        inset 2px 2px 2px rgb(255, 255, 255);
+    box-shadow: 4px 2px 3px 0px rgba(251, 249, 249, 0.63) inset,
+        -3px -1px 4px 0px rgba(0, 0, 0, 0.22) inset,
+        11px 4px 12px -1px rgba(0, 0, 0, 0.22);
 }
 
 .ruedita-luna {
@@ -72,27 +68,25 @@ header {
     top: 0;
     right: 70px;
 }
+
 .ruedita-luna {
     height: 70px;
     width: 70px;
     border-radius: 100%;
     background-color: rgb(206, 206, 206);
-    box-shadow:
-        1px 1px 1px rgba(0, 0, 0, 0.3),
-        /* Sombra genérica */
-        1px 1px 1px rgba(255, 255, 255, 0.7),
-        /* Luz desde arriba a la izquierda */
-        1px 1px 1px rgba(7, 7, 7, 0.5),
-        /* Luz amarilla arriba derecha */
-        inset 2px 2px 2px rgb(255, 255, 255);
+    box-shadow: 4px 2px 3px 0px rgba(251, 249, 249, 0.63) inset,
+        -3px -1px 4px 0px rgba(0, 0, 0, 0.22) inset,
+        11px 4px 12px -1px rgba(0, 0, 0, 0.22);
     position: absolute;
     top: 0;
     right: 75px;
     transition: right 0.5s ease;
 }
+
 .toggle-menu:checked~.menu-icon .ruedita .ruedita-luna {
     right: 0px;
 }
+
 .ruedita .crater-1 {
     position: absolute;
     top: 10px;
@@ -139,7 +133,7 @@ header {
 }
 
 .toggle-menu:checked~.menu-icon {
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(38 61 72);
 }
 
 .toggle-menu:checked~.menu-icon .fondo-wrapper {
@@ -167,8 +161,8 @@ header {
     color: white;
     font-size: 15px;
     position: absolute;
-    top: 2px;
-    left: 10px;
+    top: 7px;
+    left: 79px;
 }
 
 .fondo-animado .fondo-night .star-2 {
@@ -191,8 +185,8 @@ header {
     color: white;
     font-size: 15px;
     position: absolute;
-    top: 50px;
-    left: 120px;
+    top: 28px;
+    left: 38px;
 }
 
 .fondo-animado .fondo-night .star-5 {
@@ -247,8 +241,8 @@ header {
     color: white;
     font-size: 15px;
     position: absolute;
-    top: 40px;
-    left: 60px;
+    top: 48px;
+    left: 77px;
 }
 
 .fondo-day {
@@ -261,7 +255,7 @@ header {
     position: absolute;
     height: 70px;
     width: 70px;
-    bottom: -10px;
+    bottom: -26px;
     right: -20px;
     border-radius: 100%;
     z-index: 20;
@@ -272,8 +266,8 @@ header {
     position: absolute;
     height: 60px;
     width: 60px;
-    bottom: -20px;
-    right: 30px;
+    bottom: -31px;
+    right: 25px;
     border-radius: 100%;
     z-index: 20;
 }
@@ -283,8 +277,8 @@ header {
     position: absolute;
     height: 50px;
     width: 50px;
-    bottom: -20px;
-    right: 50px;
+    bottom: -28px;
+    right: 60px;
     border-radius: 100%;
     z-index: 20;
 }
@@ -294,8 +288,8 @@ header {
     position: absolute;
     height: 50px;
     width: 50px;
-    bottom: -20px;
-    right: 70px;
+    bottom: -38px;
+    right: 87px;
     border-radius: 100%;
     z-index: 20;
 }
@@ -317,7 +311,7 @@ header {
     height: 60px;
     width: 60px;
     bottom: -15px;
-    right: 35px;
+    right: 28px;
     border-radius: 100%;
     z-index: 19;
 }
@@ -325,21 +319,22 @@ header {
 .fondo-day .cloud-gray .cloud-3 {
     background-color: rgb(205, 221, 250);
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 51px;
+    width: 62px;
     bottom: -15px;
     right: 55px;
     border-radius: 100%;
     z-index: 19;
 }
 
+
 .fondo-day .cloud-gray .cloud-4 {
     background-color: rgb(205, 221, 250);
     position: absolute;
-    height: 50px;
-    width: 50px;
-    bottom: -15px;
-    right: 75px;
+    height: 55px;
+    width: 56px;
+    bottom: -35px;
+    right: 87px;
     border-radius: 100%;
     z-index: 19;
 }
