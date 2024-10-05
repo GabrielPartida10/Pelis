@@ -270,8 +270,8 @@ header {
 .fondo-day .cloud-white .cloud-2 {
     background-color: white;
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     bottom: -20px;
     right: 30px;
     border-radius: 100%;
@@ -314,8 +314,8 @@ header {
 .fondo-day .cloud-gray .cloud-2 {
     background-color: rgb(205, 221, 250);
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     bottom: -15px;
     right: 35px;
     border-radius: 100%;
